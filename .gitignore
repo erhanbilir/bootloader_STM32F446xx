@@ -1,52 +1,46 @@
-# Prerequisites
-*.d
+# Build output directories
+/Debug/
+/Release/
+/build/
 
-# Object files
+# Object and binary files
 *.o
-*.ko
-*.obj
+*.d
 *.elf
-
-# Linker output
-*.ilk
+*.hex
+*.bin
 *.map
-*.exp
 
-# Precompiled Headers
-*.gch
-*.pch
+# STM32CubeIDE / STM32CubeMX generated files
+*.ioc
+*.launch
+*.log
+*.project
+*.cproject
+*.mxproject
+*.svd
+.settings/  # IDE kişisel ayarlarını içerir
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# IDE-specific folders
+.vscode/
+.idea/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Editor temp/backups
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
 
-# Executables
+# macOS metadata
+.DS_Store
+
+# Executables and output by tools
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CMake cache/build files (if using CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile

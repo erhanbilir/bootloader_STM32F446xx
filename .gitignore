@@ -1,9 +1,9 @@
-# Build output directories
+# Ignore build output directories
 /Debug/
 /Release/
 /build/
 
-# Object and binary files
+# Ignore object files and compiler outputs
 *.o
 *.d
 *.elf
@@ -11,35 +11,34 @@
 *.bin
 *.map
 
-# STM32CubeIDE / STM32CubeMX generated files
+# STM32CubeIDE and STM32CubeMX generated project files
 *.ioc
 *.launch
 *.log
 *.project
 *.cproject
+*.settings/
 *.mxproject
 *.svd
-.settings/  # IDE kişisel ayarlarını içerir
 
-# IDE-specific folders
+# IDE-specific folders (Eclipse, VSCode, CLion, etc.)
 .vscode/
 .idea/
+*.swp
+*.swo
+*.DS_Store
 
-# Editor temp/backups
+# Backup and temporary files
 *~
 *.bak
 *.tmp
-*.swp
-*.swo
+*.user
 
-# macOS metadata
-.DS_Store
-
-# Executables and output by tools
+# Executables and output files
 *.exe
 *.out
 
-# CMake cache/build files (if using CMake)
+# CMake generated files (if CMake is used)
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
